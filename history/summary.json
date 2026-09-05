@@ -41,16 +41,18 @@
     "icon": "https://www.librate.app/favicon.png",
     "slug": "cover-cdn-r2",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "61.36%",
+    "uptimeDay": "61.36%",
+    "uptimeWeek": "61.36%",
+    "uptimeMonth": "61.36%",
+    "uptimeYear": "61.36%",
     "time": 67,
     "timeDay": 67,
     "timeWeek": 67,
     "timeMonth": 67,
     "timeYear": 67,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-09-05": 0
+    }
   }
 ]
