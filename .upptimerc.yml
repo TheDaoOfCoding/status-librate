@@ -1,31 +1,27 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime Configuration for Libraté
+owner: TheDaoOfCoding
+repo: status-librate
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Libraté Production
+    url: https://librate.app
+    icon: https://librate.app/icon.png
+  - name: Libraté Beta (SSD Tunnel)
+    url: https://beta.librate.app
+    icon: https://librate.app/icon.png
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.librate.app
+  logoUrl: https://librate.app/icon.png
+  name: Libraté Status
+  introTitle: "**Libraté System Status**"
+  introMessage: Real-time service health, uptime, and latency for Libraté.
   navbar:
     - title: Status
       href: /
+    - title: Libraté Main
+      href: https://librate.app
+    - title: Beta Channel
+      href: https://beta.librate.app
     - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+      href: https://github.com/TheDaoOfCoding/status-librate
