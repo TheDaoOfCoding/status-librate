@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 929,
-    "timeDay": 929,
-    "timeWeek": 929,
-    "timeMonth": 929,
-    "timeYear": 929,
+    "time": 512,
+    "timeDay": 512,
+    "timeWeek": 512,
+    "timeMonth": 512,
+    "timeYear": 512,
     "dailyMinutesDown": {}
   },
   {
@@ -28,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 2031,
-    "timeDay": 2031,
-    "timeWeek": 2031,
-    "timeMonth": 2031,
-    "timeYear": 2031,
+    "time": 1859,
+    "timeDay": 1859,
+    "timeWeek": 1859,
+    "timeMonth": 1859,
+    "timeYear": 1859,
     "dailyMinutesDown": {}
   },
   {
@@ -41,16 +41,18 @@
     "icon": "https://www.librate.app/librate_minimal_gold_e_cutout.png",
     "slug": "cover-cdn-r2",
     "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 67,
-    "timeDay": 67,
-    "timeWeek": 67,
-    "timeMonth": 67,
-    "timeYear": 67,
-    "dailyMinutesDown": {}
+    "uptime": "2.39%",
+    "uptimeDay": "2.39%",
+    "uptimeWeek": "2.39%",
+    "uptimeMonth": "2.39%",
+    "uptimeYear": "2.39%",
+    "time": 70,
+    "timeDay": 70,
+    "timeWeek": 70,
+    "timeMonth": 70,
+    "timeYear": 70,
+    "dailyMinutesDown": {
+      "2026-09-05": 9
+    }
   }
 ]
