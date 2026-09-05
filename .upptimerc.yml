@@ -132,6 +132,89 @@ status-website:
         font-weight: 700 !important;
         color: #f0eff0 !important;
       }
+      .changed {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
+        margin-top: 2.5rem !important;
+        margin-bottom: 1.25rem !important;
+      }
+      .changed h2 {
+        margin: 0 !important;
+      }
+      .changed form,
+      form.svelte-fqsq6s,
+      .r.svelte-fqsq6s {
+        display: inline-flex !important;
+        align-items: center !important;
+        background-color: #161920 !important;
+        border: 1px solid #252830 !important;
+        border-radius: 8px !important;
+        padding: 3px !important;
+        gap: 2px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+      }
+      .changed form div,
+      form.svelte-fqsq6s div {
+        display: inline-flex !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .changed form input[type="radio"],
+      form.svelte-fqsq6s input,
+      input.svelte-fqsq6s {
+        position: absolute !important;
+        opacity: 0 !important;
+        width: 0 !important;
+        height: 0 !important;
+        pointer-events: none !important;
+        margin: 0 !important;
+      }
+      .changed form label,
+      form.svelte-fqsq6s label,
+      .r.svelte-fqsq6s label.svelte-fqsq6s.svelte-fqsq6s,
+      label.svelte-fqsq6s {
+        font-family: 'JetBrains Mono', monospace !important;
+        font-size: 0.72rem !important;
+        font-weight: 500 !important;
+        color: #8b8fa8 !important;
+        background: transparent !important;
+        border: 1px solid transparent !important;
+        border-radius: 6px !important;
+        padding: 0.35rem 0.7rem !important;
+        margin: 0 !important;
+        min-width: 40px !important;
+        text-align: center !important;
+        cursor: pointer !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        user-select: none !important;
+        transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+      }
+      .changed form label:hover,
+      form.svelte-fqsq6s label:hover,
+      label.svelte-fqsq6s:hover {
+        color: #f0eff0 !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+      }
+      .changed form label:active,
+      label.svelte-fqsq6s:active {
+        transform: scale(0.96) !important;
+      }
+      .changed form input[type="radio"]:checked + label,
+      form.svelte-fqsq6s input:checked + label,
+      .r.svelte-fqsq6s input.svelte-fqsq6s:checked + label.svelte-fqsq6s,
+      input:checked + label {
+        background-color: rgba(201, 168, 76, 0.15) !important;
+        border-color: rgba(201, 168, 76, 0.38) !important;
+        color: #c9a84c !important;
+        font-weight: 600 !important;
+        box-shadow: 0 0 10px rgba(201, 168, 76, 0.18) !important;
+      }
       article {
         background-color: #161920 !important;
         border: 1px solid #252830 !important;
@@ -149,11 +232,13 @@ status-website:
       }
       article.up { border-left: 1px solid #252830 !important; }
       article.down {
-        border-left: 1px solid rgba(224, 92, 92, 0.5) !important;
+        border: 1px solid rgba(224, 92, 92, 0.4) !important;
+        border-left: 1px solid rgba(224, 92, 92, 0.6) !important;
         background: linear-gradient(90deg, rgba(224, 92, 92, 0.08) 0%, #161920 60%) !important;
       }
       article.degraded {
-        border-left: 1px solid rgba(201, 168, 76, 0.5) !important;
+        border: 1px solid rgba(201, 168, 76, 0.4) !important;
+        border-left: 1px solid rgba(201, 168, 76, 0.6) !important;
         background: linear-gradient(90deg, rgba(201, 168, 76, 0.08) 0%, #161920 60%) !important;
       }
       article.up h4::before {
@@ -233,6 +318,21 @@ status-website:
         color: #f0eff0 !important;
       }
       article.graph { background-image: none !important; }
+      section article.down.link {
+        border: 1px solid rgba(224, 92, 92, 0.35) !important;
+        border-left: 1px solid rgba(224, 92, 92, 0.6) !important;
+        background: linear-gradient(90deg, rgba(224, 92, 92, 0.08) 0%, #161920 60%) !important;
+        border-radius: 12px !important;
+      }
+      section article.down.link a {
+        color: #e05c5c !important;
+        font-family: 'Inter', sans-serif !important;
+        font-weight: 500 !important;
+        text-decoration: none !important;
+      }
+      section article.down.link a:hover {
+        text-decoration: underline !important;
+      }
       footer {
         text-align: center !important;
         font-size: 0.75rem !important;
