@@ -1,34 +1,315 @@
-/* Libraté Brand Status Theme */
+/* ==========================================================================
+   Libraté Status Page Design System
+   Matches librate-ui-taste: Cormorant Garamond, Inter, JetBrains Mono,
+   Obsidian slate (#0d0f14), Surface cards (#161920), Gold accents (#c9a84c)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 :root {
-  --body-background-color: #0b0f17;
-  --body-text-color: #f1f5f9;
-  --card-background-color: #111827;
-  --nav-background-color: #0b0f17;
-  --nav-border-bottom-color: #1f2937;
+  --body-background-color: #0d0f14;
+  --body-text-color: #f0eff0;
+  --card-background-color: #161920;
+  --card-border-color: #252830;
+  --nav-background-color: #0d0f14;
+  --nav-border-bottom-color: #252830;
+  --nav-current-border-bottom-color: #c9a84c;
+  --up-border-left-color: #4caf84;
+  --up-color-color: #f0eff0;
+  --tag-color: #0d0f14;
+  --tag-up-background-color: #4caf84;
+  --down-border-left-color: #e05c5c;
+  --down-background-color: #1c1417;
+  --tag-down-background-color: #e05c5c;
+  --degraded-border-left-color: #c9a84c;
+  --tag-degraded-background-color: #c9a84c;
+  --change-background-color: #c9a84c;
+  --code-color: #c9a84c;
+  --code-background-color: #1e2028;
+  --submit-button-background-color: #c9a84c;
+  --submit-button-border-color: #e0bc6a;
+  --submit-button-color: #0d0f14;
+  --graph-opacity: 0.65;
+  --graph-filter: hue-rotate(330deg) saturate(0.7) opacity(0.65);
 }
 
-body {
-  background-color: #0b0f17 !important;
-  color: #f1f5f9 !important;
+/* Base resets & typography */
+html, body {
+  background-color: #0d0f14 !important;
+  color: #f0eff0 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
+/* Top Navbar */
 nav {
-  background-color: #0b0f17 !important;
-  border-bottom: 1px solid #1f2937 !important;
+  background-color: #0d0f14 !important;
+  border-bottom: 1px solid #252830 !important;
+  padding: 0.75rem 0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
 }
 
-.card, article, section {
-  background-color: #111827 !important;
-  border-color: #1f2937 !important;
+nav .container {
+  max-width: 960px !important;
+  margin: 0 auto !important;
+  padding: 0 1.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
 }
 
+nav a.logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.65rem !important;
+  text-decoration: none !important;
+}
+
+nav a.logo img {
+  height: 32px !important;
+  width: auto !important;
+  max-height: 32px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 0 8px rgba(201, 168, 76, 0.35)) !important;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+nav a.logo:hover img {
+  transform: scale(1.06) !important;
+}
+
+nav a.logo div {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;
+  color: #f0eff0 !important;
+  letter-spacing: -0.01em !important;
+  transition: color 0.2s ease !important;
+}
+
+nav a.logo:hover div {
+  color: #c9a84c !important;
+}
+
+nav ul {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.25rem !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+nav ul li a {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  color: #8b8fa8 !important;
+  text-decoration: none !important;
+  padding: 0.35rem 0.65rem !important;
+  border-radius: 6px !important;
+  transition: color 0.2s ease, background-color 0.2s ease !important;
+}
+
+nav ul li a:hover {
+  color: #c9a84c !important;
+}
+
+nav ul li a[aria-current="page"] {
+  color: #f0eff0 !important;
+  border-bottom: 2px solid #c9a84c !important;
+  border-radius: 0 !important;
+}
+
+/* Page Container */
+main.container {
+  max-width: 960px !important;
+  margin: 2.5rem auto !important;
+  padding: 0 1.5rem !important;
+}
+
+/* Intro Header */
+header h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 2.35rem !important;
+  font-weight: 700 !important;
+  color: #f0eff0 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 0.4rem !important;
+}
+
+header h1 strong {
+  font-weight: 700 !important;
+  color: #f0eff0 !important;
+}
+
+header p.lead {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.95rem !important;
+  color: #8b8fa8 !important;
+  margin-top: 0 !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Section Headings */
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  color: #f0eff0 !important;
+  letter-spacing: -0.01em !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Time Range Filter */
+.changed form {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+
+.changed form input {
+  display: none !important;
+}
+
+.changed form label {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  padding: 0.25rem 0.6rem !important;
+  border-radius: 6px !important;
+  background-color: #161920 !important;
+  border: 1px solid #252830 !important;
+  color: #8b8fa8 !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.changed form label:hover {
+  border-color: #32363f !important;
+  color: #f0eff0 !important;
+}
+
+.changed form input[type="radio"]:checked + label {
+  background-color: #1e2028 !important;
+  border-color: #c9a84c !important;
+  color: #c9a84c !important;
+  font-weight: 600 !important;
+  box-shadow: 0 0 10px rgba(201, 168, 76, 0.2) !important;
+}
+
+/* Status Cards */
+article {
+  background-color: #161920 !important;
+  border: 1px solid #252830 !important;
+  border-radius: 10px !important;
+  padding: 1.25rem 1.5rem !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  margin-bottom: 0.85rem !important;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+  position: relative !important;
+}
+
+article:hover {
+  border-color: #32363f !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+}
+
+article.up {
+  border-left: 4px solid #4caf84 !important;
+}
+
+article.down {
+  border-left: 4px solid #e05c5c !important;
+  background: linear-gradient(90deg, rgba(224, 92, 92, 0.08) 0%, #161920 60%) !important;
+}
+
+article.degraded {
+  border-left: 4px solid #c9a84c !important;
+  background: linear-gradient(90deg, rgba(201, 168, 76, 0.08) 0%, #161920 60%) !important;
+}
+
+/* Card titles */
+article h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #f0eff0 !important;
+  letter-spacing: -0.01em !important;
+  margin-bottom: 0.45rem !important;
+}
+
+article h4 a {
+  color: #f0eff0 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+article:hover h4 a {
+  color: #c9a84c !important;
+}
+
+article h4 img.icon {
+  height: 1.15rem !important;
+  width: auto !important;
+  margin-right: 0.5rem !important;
+  vertical-align: -0.15rem !important;
+}
+
+/* Metrics / Uptime data */
+article div {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.85rem !important;
+  color: #8b8fa8 !important;
+  line-height: 1.6 !important;
+}
+
+article .data {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-weight: 600 !important;
+  color: #f0eff0 !important;
+  background: transparent !important;
+  padding: 0 0.25rem !important;
+}
+
+/* Graph background in card */
+article.graph {
+  background-image: var(--background);
+  background-size: 280px 75% !important;
+  background-repeat: no-repeat !important;
+  background-position: center right 1.5rem !important;
+  filter: none !important;
+}
+
+/* Active Incident card */
+section article.down.link {
+  border-left: 4px solid #e05c5c !important;
+  background-color: #1a1215 !important;
+}
+
+section article.down.link a {
+  color: #e05c5c !important;
+}
+
+/* Footer */
 footer {
+  text-align: center !important;
   font-size: 0.75rem !important;
   opacity: 0.65 !important;
-  margin-top: 2.5rem !important;
-  padding-bottom: 2rem !important;
+  margin-top: 3.5rem !important;
+  padding-bottom: 2.5rem !important;
+  color: #8b8fa8 !important;
 }
 
-footer p, footer a, footer span {
-  font-size: 0.75rem !important;
+footer a {
+  color: #c9a84c !important;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
 }

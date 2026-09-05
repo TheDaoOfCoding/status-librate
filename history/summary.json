@@ -2,7 +2,7 @@
   {
     "name": "Libraté Web App",
     "url": "https://www.librate.app",
-    "icon": "https://www.librate.app/favicon.png",
+    "icon": "https://www.librate.app/librate_minimal_gold_e_cutout.png",
     "slug": "librate-web-app",
     "status": "up",
     "uptime": "100.00%",
@@ -20,7 +20,7 @@
   {
     "name": "Libraté Library",
     "url": "https://www.librate.app/library",
-    "icon": "https://www.librate.app/favicon.png",
+    "icon": "https://www.librate.app/librate_minimal_gold_e_cutout.png",
     "slug": "librate-library",
     "status": "up",
     "uptime": "100.00%",
@@ -38,21 +38,19 @@
   {
     "name": "Cover CDN (R2)",
     "url": "https://cdn.librate.app",
-    "icon": "https://www.librate.app/favicon.png",
+    "icon": "https://www.librate.app/librate_minimal_gold_e_cutout.png",
     "slug": "cover-cdn-r2",
-    "status": "down",
-    "uptime": "61.36%",
-    "uptimeDay": "61.36%",
-    "uptimeWeek": "61.36%",
-    "uptimeMonth": "61.36%",
-    "uptimeYear": "61.36%",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 67,
     "timeDay": 67,
     "timeWeek": 67,
     "timeMonth": 67,
     "timeYear": 67,
-    "dailyMinutesDown": {
-      "2026-09-05": 0
-    }
+    "dailyMinutesDown": {}
   }
 ]
