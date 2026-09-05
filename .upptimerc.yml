@@ -5,18 +5,55 @@ repo: status-librate
 sites:
   - name: Libraté Web App
     url: https://www.librate.app
-    icon: https://www.librate.app/icon.png
+    icon: https://www.librate.app/favicon.png
   - name: Libraté Library
     url: https://www.librate.app/library
-    icon: https://www.librate.app/icon.png
+    icon: https://www.librate.app/favicon.png
   - name: Cover CDN (R2)
     url: https://cdn.librate.app
-    icon: https://www.librate.app/icon.png
+    icon: https://www.librate.app/favicon.png
 
 status-website:
   cname: status.librate.app
-  logoUrl: https://www.librate.app/icon.png
+  logoUrl: https://www.librate.app/favicon.png
   name: Libraté Status
+  theme: night
+  favicon: https://www.librate.app/favicon.png
+  faviconSvg: https://www.librate.app/favicon.png
+  themeUrl: /assets/custom.css
+  customHeadHtml: |
+    <link rel="icon" type="image/png" href="https://www.librate.app/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="https://www.librate.app/favicon.png">
+    <style>
+      :root {
+        --body-background-color: #0b0f17;
+        --body-text-color: #f1f5f9;
+        --card-background-color: #111827;
+        --nav-background-color: #0b0f17;
+        --nav-border-bottom-color: #1f2937;
+      }
+      body {
+        background-color: #0b0f17 !important;
+        color: #f1f5f9 !important;
+      }
+      nav {
+        background-color: #0b0f17 !important;
+        border-bottom: 1px solid #1f2937 !important;
+      }
+      .card, article, section {
+        background-color: #111827 !important;
+        border-color: #1f2937 !important;
+      }
+      footer {
+        font-size: 0.75rem !important;
+        opacity: 0.65 !important;
+        margin-top: 2.5rem !important;
+        padding-bottom: 2rem !important;
+      }
+      footer p, footer a, footer span {
+        font-size: 0.75rem !important;
+      }
+    </style>
   introTitle: "**Libraté System Status**"
   introMessage: Real-time service health, uptime, and latency for Libraté.
   navbar:
@@ -24,3 +61,6 @@ status-website:
       href: /
     - title: Go to Libraté
       href: https://www.librate.app
+
+i18n:
+  footer: "This page is powered by [Upptime](https://upptime.js.org)."
