@@ -1,7 +1,7 @@
 url: https://www.librate.app/library
-status: up
-code: 200
-responseTime: 10867
-lastUpdated: 2026-09-12T03:44:51.820Z
+status: down
+code: 503
+responseTime: 98
+lastUpdated: 2026-09-12T12:08:43.029Z
 startTime: 2026-09-05T05:32:34.501Z
 generator: Upptime <https://github.com/upptime/upptime>
